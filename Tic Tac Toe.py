@@ -107,4 +107,5 @@ def game():
         print("Good bYe !!")
 
 if __name__ == "__main__":
+    #Calling game() when script is exicuted
     game()
