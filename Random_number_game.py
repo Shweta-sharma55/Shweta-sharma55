@@ -32,10 +32,10 @@ def game():
             f"{player_name} choose {player_choice} and computer choose {Computer_choice} \n >>>>{player_name} win<<<<<<")
     elif (Computer_choice == player_choice):
         print(
-            f"{player_choice} choose {player_choice} and computer choose {Computer_choice} \n >>>>Tie<<<<<<")
+            f"{player_name} choose {player_choice} and computer choose {Computer_choice} \n >>>>Tie<<<<<<")
     else:
         print(
-            f"{player_choice} choose {player_choice} and computer choose {Computer_choice} \n >>>>Computer win<<<<<<")
+            f"{player_name} choose {player_choice} and computer choose {Computer_choice} \n >>>>Computer win<<<<<<")
 
     print("play Again ???")
     play_again = input("Play again Y/N :").lower()
