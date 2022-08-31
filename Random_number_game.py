@@ -20,10 +20,8 @@ def game():
     print(f"{player_turn} will go first  ")
     if player_turn == player_1_name:
         player_1_choice = get_check_input(player_1_name)
-        print(player_1_choice)
     else:
         player_2_choice = get_check_input(player_2_name)
-        print(player_2_choice)
 
     if player_1_choice == " ":
         player_1_choice = get_check_input(player_1_name)
