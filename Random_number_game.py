@@ -1,9 +1,11 @@
 # number game
 import random
-import maskpass #pip install maskpass
+import maskpass  # pip install maskpass
+
 
 def get_check_input(name):
-    choice = int(maskpass.askpass(prompt=f"{name } Choose a number in range 0-9 : ",mask= "*"))
+    choice = int(maskpass.askpass(
+        prompt=f"{name } Choose a number in range 0-9 : ", mask="*"))
     # Add input Filtering Logic here
     return choice
 
@@ -12,7 +14,7 @@ def game():
     player_1_name = input("player_1 Please Enter your name : ")
     player_2_name = input("player_2 Please Enter your name : ")
 
-    player_list = [player_2_name,player_1_name]
+    player_list = [player_2_name, player_1_name]
     player_1_choice = " "
     player_2_choice = " "
 
