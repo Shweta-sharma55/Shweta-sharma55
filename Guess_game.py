@@ -17,9 +17,9 @@ def player_choice():  # for player to decide his mark(X or Y)
 def player_guess(player_name):  # player guessing the number
     player = player_name
     max_chances = 2
-    number_to_guess = 10 #it can be random if requied use random function
-    count = 0 #to track number of guess 
-    win = False # to check player won 
+    number_to_guess = 10  # it can be random if requied use random function
+    count = 0  # to track number of guess
+    win = False  # to check player won
     if count < max_chances:
         guess = int(input("Guess the number.  "))
         if guess != number_to_guess:
@@ -33,13 +33,13 @@ def player_guess(player_name):  # player guessing the number
 
     if count == max_chances:
         print(f"All {max_chances} chances exhausted.")
-        return win
+    return win
 
 
 def replay():
     play_game = input("Do you want to play again. Yes or NO  ").lower()
     if play_game == "yes":
-        game() #calling main game function agin as user wanted to play 
+        game()  # calling main game function agin as user wanted to play
     else:
         print("See you again!!")
 
@@ -50,7 +50,8 @@ def game():
     firstplayer = first_player()
     print(firstplayer + "  will go first.")
 
-   #pending final logic
+   # pending final logic
 
-if __name__ =="__main__":
+
+if __name__ == "__main__":
     game()
