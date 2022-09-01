@@ -1,0 +1,48 @@
+def first_player(): #to decide who will go first
+    import random
+    player_lst = ["player1", "player2"]
+    goes_first = random.choice(player_lst)
+    return goes_first
+def player_choice(): #for player to decide his mark(X or Y)
+    choice = " "
+    while choice not in ["X","Y"]:
+        choice = input("Choose X or Y  ")
+    return choice
+
+def player_guess():   #player guessing the number
+    firstplayer = first_player()
+    count = 2
+    while count>0:
+        guess = int(input("Guess the number.  "))
+    
+        if guess != 10:
+            print(f"That's not the number, {firstplayer}.  You have {count-1} chances remaining."  )
+        else:
+                print("You guessed it right.")
+                break
+        count -=1
+        if count == 0:
+            print("All  2 chances exhausted.")
+def replay():
+    play_game = input("Do you want to play again. Yes or NO  ")
+    return play_again  == "Yes" or "Y":
+        
+        
+def game():
+    firstplayer = first_player()
+    print(firstplayer +  "  will go first.")
+    
+    turn = player_choice()
+    turn  = "X"
+    player_guess()
+    if turn == "X":
+        turn = "Y"
+        print("It is next player's turn.")
+        player_guess()
+    else:
+        turn = "X"
+    if replay():
+        game()
+        
+    else:
+        print("Bye")
